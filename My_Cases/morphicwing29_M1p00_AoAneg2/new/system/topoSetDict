@@ -1,0 +1,19 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+actions
+(
+    {
+        name    indirectPatchFaces;
+        type    faceSet;
+        action  new;
+        source  cellToFace;
+        set     underdeterminedCells;
+        option  all;
+    }
+);

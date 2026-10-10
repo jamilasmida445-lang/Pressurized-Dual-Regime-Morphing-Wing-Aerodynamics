@@ -1,0 +1,32 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2212                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+biconvex_core_Extrude.stl
+{
+    // Method to extract feature edges
+    extractionMethod    extractFromSurface;
+
+    // Mark edges with adjacent surface normals at an angle greater than this (in degrees)
+    // 150 degrees works well for capturing sharp leading/trailing edges on airfoils
+    includedAngle       150;
+
+    subsetByDistance    no;
+
+    // Write feature edges in OBJ format for inspection in ParaView (.obj)
+    writeObj            yes;
+}
+
+// ************************************************************************* //

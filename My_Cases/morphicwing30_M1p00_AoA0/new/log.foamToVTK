@@ -1,0 +1,71 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : foamToVTK
+Date   : Aug 28 2026
+Time   : 23:21:08
+Host   : DESKTOP-OPC5974
+PID    : 18956
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/case2/new
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Initial memory 38817792 kB
+Create mesh for time = 0
+
+VTK mesh topology: 0.053 s, 70270976 kB
+Time: 0
+    volScalar    : T p rho
+    volVector    : U
+    Internal  : "VTK/new_0/internal.vtu"
+    Boundary  : "VTK/new_0/boundary/inlet.vtp"
+    Boundary  : "VTK/new_0/boundary/outlet.vtp"
+    Boundary  : "VTK/new_0/boundary/bottom.vtp"
+    Boundary  : "VTK/new_0/boundary/top.vtp"
+    Boundary  : "VTK/new_0/boundary/airfoil.vtp"
+Wrote in 0.621 s, 91230208 kB
+Time: 0.00400013
+    volScalar    : T p rho
+    volVector    : U
+    Internal  : "VTK/new_14399/internal.vtu"
+    Boundary  : "VTK/new_14399/boundary/inlet.vtp"
+    Boundary  : "VTK/new_14399/boundary/outlet.vtp"
+    Boundary  : "VTK/new_14399/boundary/bottom.vtp"
+    Boundary  : "VTK/new_14399/boundary/top.vtp"
+    Boundary  : "VTK/new_14399/boundary/airfoil.vtp"
+Wrote in 0.657 s, 91762688 kB
+Time: 0.00499987
+    volScalar    : T p rho
+    volVector    : U
+    Internal  : "VTK/new_17982/internal.vtu"
+    Boundary  : "VTK/new_17982/boundary/inlet.vtp"
+    Boundary  : "VTK/new_17982/boundary/outlet.vtp"
+    Boundary  : "VTK/new_17982/boundary/bottom.vtp"
+    Boundary  : "VTK/new_17982/boundary/top.vtp"
+    Boundary  : "VTK/new_17982/boundary/airfoil.vtp"
+Wrote in 0.388 s, 91725824 kB
+Time: 0.00600012
+    volScalar    : T p rho
+    volVector    : U
+    Internal  : "VTK/new_21566/internal.vtu"
+    Boundary  : "VTK/new_21566/boundary/inlet.vtp"
+    Boundary  : "VTK/new_21566/boundary/outlet.vtp"
+    Boundary  : "VTK/new_21566/boundary/bottom.vtp"
+    Boundary  : "VTK/new_21566/boundary/top.vtp"
+    Boundary  : "VTK/new_21566/boundary/airfoil.vtp"
+Wrote in 0.417 s, 91557888 kB
+
+End: 2.136 s, 124563456 kB (peak)
+

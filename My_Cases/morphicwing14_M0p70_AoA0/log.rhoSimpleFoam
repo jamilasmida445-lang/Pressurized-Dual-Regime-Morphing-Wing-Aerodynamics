@@ -1,0 +1,41 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoSimpleFoam -parallel -case C:\Users\Copy Center\SimFlow-Workspaces\Workspace-fjta35\My_Cases\morphicwing14_M0p70_AoA0
+Date   : Sep 06 2026
+Time   : 02:47:35
+Host   : DESKTOP-OPC5974
+PID    : 13128
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing14_M0p70_AoA0
+nProcs : 3
+Hosts  :
+(
+    (DESKTOP-OPC5974 3)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: no convergence criteria found. Calculations will run for 50000 steps.
+
+Reading thermophysical properties
+
+mpiexec aborting job...

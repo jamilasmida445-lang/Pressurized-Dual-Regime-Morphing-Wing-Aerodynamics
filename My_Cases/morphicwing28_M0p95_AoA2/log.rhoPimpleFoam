@@ -1,0 +1,212 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoPimpleFoam -parallel -case C:\Users\Copy Center\SimFlow-Workspaces\Workspace-fjta35\My_Cases\morphicwing28_M0p95_AoA2
+Date   : Aug 31 2026
+Time   : 12:52:14
+Host   : DESKTOP-OPC5974
+PID    : 14544
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2
+nProcs : 3
+Hosts  :
+(
+    (DESKTOP-OPC5974 3)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting dynamicFvMesh dynamicMotionSolverFvMesh
+Selecting motion solver: displacementLaplacian
+Applying motion to entire mesh
+Selecting motion diffusion: directional
+
+PIMPLE: no residual control data found. Calculations will employ 2 corrector loops
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            heRhoThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    model           kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+Creating field dpdt for moving meshes
+
+Creating field kinetic energy K
+
+No MRF models present
+
+No finite volume options present
+Constructing face momentum rhoUf
+Courant Number mean: 0.0427513 max: 8.64858
+forceCoeffs forceCoeffs:
+    rho: rho
+    Not including porosity effects
+    magUInf: 238.21
+    lRef   : 1
+    Aref   : 1
+    rhoInf : 1.225
+    Selecting all coefficients
+    - Drag force: Cd
+    - Drag force front: Cd(f)
+    - Drag force rear: Cd(r)
+    - Lift force: Cl
+    - Lift force front: Cl(f)
+    - Lift force rear: Cl(r)
+    - Pitch moment: CmPitch
+    - Roll moment: CmRoll
+    - Yaw moment: CmYaw
+    - Side force: Cs
+    - Side force front: Cs(f)
+    - Side force rear: Cs(r)
+
+
+
+Starting time loop
+
+Courant Number mean: 0.00395479 max: 0.800054
+deltaT = 9.25069e-06
+Time = 9.25069e-06
+
+PIMPLE: iteration 1
+DICPCG:  Solving for cellDisplacementx, Initial residual = 0, Final residual = 0, No Iterations 0
+DICPCG:  Solving for cellDisplacementy, Initial residual = 0, Final residual = 0, No Iterations 0
+--> FOAM Warning : 
+    From void Foam::twoDPointCorrector::calcAddressing() const
+    in file twoDPointCorrector/twoDPointCorrector.C at line 154
+    the number of vertices in the geometry is odd - this should not be the case for a 2-D case. Please check the geometry.
+--> FOAM Warning : 
+    From void Foam::twoDPointCorrector::calcAddressing() const
+    in file twoDPointCorrector/twoDPointCorrector.C at line 163
+    The number of points in the mesh is not equal to twice the number of edges normal to the plane - this may be OK only for wedge geometries.
+    Please check the geometry or adjust the orthogonality tolerance.
+
+Number of normal edges: 27621 number of points: 32861
+[1] processorPolyPatch::calcGeometry : Writing my 922 faces to OBJ file "C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor1/procBoundary1to0_faces.obj"
+[0] processorPolyPatch::calcGeometry : Writing my 922 faces to OBJ file "C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor0/procBoundary0to1_faces.obj"
+[2] processorPolyPatch::calcGeometry : Writing my 1722 faces to OBJ file "C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor2/procBoundary2to1_faces.obj"
+[0] processorPolyPatch::calcGeometry : Dumping cell centre lines between corresponding face centres to OBJ file"C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor0/procBoundary0to1_faceCentresConnections.obj"
+[1] processorPolyPatch::calcGeometry : Dumping cell centre lines between corresponding face centres to OBJ file"C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor1/procBoundary1to0_faceCentresConnections.obj"
+[2] processorPolyPatch::calcGeometry : Dumping cell centre lines between corresponding face centres to OBJ file"C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/morphicwing28_M0p95_AoA2/processor2/procBoundary2to1_faceCentresConnections.obj"
+[0] 
+[0] 
+[0] --> FOAM FATAL ERROR: (openfoam-2212)
+[0] face 56 area does not match neighbour by 0.0813724% -- possible face ordering problem.
+patch:procBoundary0to1 my area:0.00384554 neighbour area:0.00384867 matching tolerance:1.92683e-07
+Mesh face:81689 vertices:6((0.375191 0.247521 -0.375) (0.3752 0.247584 -0.3125) (0.375146 0.186107 -0.3125) (0.375145 0.186018 -0.34375) (0.375142 0.185954 -0.375001) (0.375171 0.216557 -0.375001))
+If you are certain your matching is correct you can increase the 'matchTolerance' setting in the patch dictionary in the boundary file.
+Rerun with processor debug flag set for more information.
+[0] 
+[1] 
+[0] 
+
+    From 
+[1] 
+virtual void Foam::processorPolyPatch::calcGeometry(Foam::PstreamBuffers&)
+
+
+[1] 
+[0] 
+--> FOAM FATAL ERROR: 
+    in file 
+(openfoam-
+meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.C
+2212
+ at line 
+)
+296
+
+.
+[1] 
+
+face 56 area does not match neighbour by 0.0813724% -- possible face ordering problem.
+patch:procBoundary1to0 my area:0.00384867 neighbour area:0.00384554 matching tolerance:1.93661e-07
+Mesh face:81167 vertices:6((0.375191 0.247521 -0.375) (0.375169 0.216492 -0.375001) (0.375142 0.185754 -0.375001) (0.375145 0.186018 -0.34375) (0.375146 0.186107 -0.3125) (0.3752 0.247584 -0.3125))
+If you are certain your matching is correct you can increase the 'matchTolerance' setting in the patch dictionary in the boundary file.
+Rerun with processor debug flag set for more information.
+[0] 
+
+
+FOAM parallel run exiting
+[1] 
+[0] 
+
+
+[1]     From virtual void Foam::processorPolyPatch::calcGeometry(Foam::PstreamBuffers&)
+[1]     in file meshes/polyMesh/polyPatches/constraint/processor/processorPolyPatch.C at line 296.
+[1] 
+FOAM parallel run exiting
+[1] 
+
+job aborted:
+[ranks] message
+
+[0] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 0
+
+[1] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 1
+
+[2] terminated
+
+---- error analysis -----
+
+[0-1] on DESKTOP-OPC5974
+rhoPimpleFoam aborted the job. abort code 1
+
+---- error analysis -----

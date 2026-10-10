@@ -1,0 +1,98 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : reconstructPar
+Date   : Aug 28 2026
+Time   : 23:22:05
+Host   : DESKTOP-OPC5974
+PID    : 20088
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/case6/new
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Reconstructing fields
+region=region0
+
+Time = 0.00200001
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 0.00400001
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+Time = 0.00600001
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        T
+        p
+        rho
+
+    Reconstructing volVectorFields
+
+        U
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+No FA fields
+
+
+End
+

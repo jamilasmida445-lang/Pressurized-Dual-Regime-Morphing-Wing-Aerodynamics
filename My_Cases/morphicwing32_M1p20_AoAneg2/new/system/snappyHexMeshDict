@@ -1,0 +1,926 @@
+FoamFile
+{
+	version	2.0;
+	class	dictionary;
+	format	ascii;
+	location	"system";
+	object	snappyHexMeshDict;
+}
+castellatedMesh	true;
+snap	true;
+addLayers	false;
+geometry
+{
+	biconvex_core_Extrude.stl
+	{
+		type	triSurfaceMesh;
+		simflowType	brep;
+		topoType	compound;
+		name	biconvex_core_Extrude;
+		faceGroups
+		{
+			face_1
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_2
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_3
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_4
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_5
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_6
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_7
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_8
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_9
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_10
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_11
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_12
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_13
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_14
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_15
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_16
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_17
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_18
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_19
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_20
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_21
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_22
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_23
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_24
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_25
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_26
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_27
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_28
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_29
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_30
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_31
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_32
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_33
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_34
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_35
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_36
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_37
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_38
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_39
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_40
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_41
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_42
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_43
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_44
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_45
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_46
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_47
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_48
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_49
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_50
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_51
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_52
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_53
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_54
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_55
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_56
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_57
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_58
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_59
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_60
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_61
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_62
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_63
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_64
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_65
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_66
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_67
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_68
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_69
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_70
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_71
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_72
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_73
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_74
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_75
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_76
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_77
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_78
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_79
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_80
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_81
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_82
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_83
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_84
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_85
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_86
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_87
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_88
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_89
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_90
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_91
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_92
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_93
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_94
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_95
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_96
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_97
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_98
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_99
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_100
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_101
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_102
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_103
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_104
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_105
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_106
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_107
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_108
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_109
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_110
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_111
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_112
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_113
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_114
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_115
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_116
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_117
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_118
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_119
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_120
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_121
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_122
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_123
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_124
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_125
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_126
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_127
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_128
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_129
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_130
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_131
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_132
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_133
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_134
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_135
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_136
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_137
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_138
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_139
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_140
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_141
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_142
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_143
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_144
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_145
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_146
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_147
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_148
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_149
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_150
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_151
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_152
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_153
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_154
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_155
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_156
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_157
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_158
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_159
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_160
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_161
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_162
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_163
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_164
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_165
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_166
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_167
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_168
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_169
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_170
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_171
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_172
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_173
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_174
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_175
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_176
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_177
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_178
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_179
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_180
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_181
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_182
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_183
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_184
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_185
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_186
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_187
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_188
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_189
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_190
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_191
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_192
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_193
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_194
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_195
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_196
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_197
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_198
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_199
+			{
+				name	biconvex_core_Extrude;
+			}
+			face_200
+			{
+				name	biconvex_core_Extrude;
+			}
+		}
+	}
+}
+castellatedMeshControls
+{
+	locationInMesh	(-2 1 0);
+	refinementSurfaces
+	{
+		biconvex_core_Extrude
+		{
+			level	( 3 4 );
+			patchInfo
+			{
+				type	wall;
+			}
+		}
+	}
+	refinementRegions
+	{
+		biconvex_core_Extrude
+		{
+			mode	inside;
+			levels	((1.0E30 0));
+		}
+	}
+	limitRegions
+	{
+	}
+	features	
+	(
+	{
+		file	"biconvex_core_Extrude.eMesh";
+		levels	((0 0));
+	}
+	);
+	maxLocalCells	2000000;
+	maxGlobalCells	50000000;
+	nCellsBetweenLevels	2;
+	maxLoadUnbalance	0.1;
+	minRefinementCells	10;
+	resolveFeatureAngle	30.0;
+	allowFreeStandingZoneFaces	true;
+}
+snapControls
+{
+	tolerance	1.0;
+	nSmoothPatch	12;
+	nSolveIter	500;
+	nRelaxIter	5;
+	nFeatureSnapIter	10;
+	implicitFeatureSnap	false;
+	explicitFeatureSnap	true;
+	multiRegionFeatureSnap	true;
+	nFaceSplitInterval	5;
+}
+addLayersControls
+{
+	layers
+	{
+	}
+	relativeSizes	true;
+	minThickness	0.1;
+	firstLayerThickness	0.2;
+	expansionRatio	1.25;
+	nGrow	0;
+	featureAngle	180.0;
+	maxFaceThicknessRatio	0.5;
+	nSmoothSurfaceNormals	5;
+	nSmoothThickness	10;
+	minMedialAxisAngle	90.0;
+	maxThicknessToMedialRatio	0.5;
+	nMedialAxisIter	100;
+	nSmoothNormals	3;
+	slipFeatureAngle	30.0;
+	nRelaxIter	5;
+	nBufferCellsNoExtrude	0;
+	nLayerIter	50;
+	nRelaxedIter	20;
+	detectExtrusionIsland	true;
+	nOuterIter	1;
+}
+meshQualityControls
+{
+	maxNonOrtho	65.0;
+	maxBoundarySkewness	20.0;
+	maxInternalSkewness	4.0;
+	maxConcave	80.0;
+	minVol	1.0E-14;
+	minTetQuality	1.0E-20;
+	minArea	-1.0;
+	minTwist	0.02;
+	minTriangleTwist	-1.0;
+	minDeterminant	0.01;
+	minFaceWeight	0.05;
+	minVolRatio	0.01;
+	minVolCollapseRatio	0.1;
+	nSmoothScale	4;
+	errorReduction	0.75;
+	relaxed
+	{
+		maxNonOrtho	75.0;
+	}
+}
+mergeTolerance	1.0E-6;
+debug	0;

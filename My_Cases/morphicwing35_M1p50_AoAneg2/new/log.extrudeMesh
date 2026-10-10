@@ -1,0 +1,50 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : extrudeMesh
+Date   : Aug 24 2026
+Time   : 04:07:57
+Host   : DESKTOP-OPC5974
+PID    : 10868
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/case7/new
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel linearNormal
+Selected extrudeModel for linearNormal using coeffs 
+{
+    thickness       0.01;
+}
+
+Extruding from patch using model linearNormal
+Collapsing edges < 0.0001 of bounding box
+
+Extruding patches 1(left) on mesh "C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/case7/new"
+
+Create mesh for time = 0
+
+
+
+--> FOAM FATAL ERROR: (openfoam-2212)
+Cannot find patch left in the source mesh.
+Valid patch names are 1(boundaries)
+
+    From Foam::label findPatchID(const Foam::polyBoundaryMesh&, const Foam::word&)
+    in file extrudeMesh.C at line 92.
+
+FOAM exiting
+

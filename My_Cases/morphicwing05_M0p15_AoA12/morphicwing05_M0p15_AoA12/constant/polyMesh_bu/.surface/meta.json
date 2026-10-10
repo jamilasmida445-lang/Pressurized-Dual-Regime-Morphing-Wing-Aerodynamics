@@ -1,0 +1,32 @@
+{
+    "nodeCount": 19824,
+    "faceCount": 19148,
+    "nodeArraySize": 77944,
+    "cellCount": 75084,
+    "trackedFiles": [
+        {
+            "logicalName": "points",
+            "fileName": "points",
+            "modifiedTime": "2026-06-30T02:22:10.974779100",
+            "size": 2309626
+        },
+        {
+            "logicalName": "faces",
+            "fileName": "faces",
+            "modifiedTime": "2026-06-30T02:22:10.982070600",
+            "size": 4977452
+        },
+        {
+            "logicalName": "owner",
+            "fileName": "owner",
+            "modifiedTime": "2026-06-30T02:22:10.983161300",
+            "size": 983853
+        },
+        {
+            "logicalName": "neighbour",
+            "fileName": "neighbour",
+            "modifiedTime": "2026-06-30T02:22:10.975800300",
+            "size": 907265
+        }
+    ]
+}

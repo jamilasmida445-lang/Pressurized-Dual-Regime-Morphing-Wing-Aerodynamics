@@ -1,0 +1,10 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      decomposeParDict;
+}
+
+numberOfSubdomains 3;  // <-- CHANGE THIS to the number of cores you want to use (e.g., 4, 6, 8)
+method          scotch;

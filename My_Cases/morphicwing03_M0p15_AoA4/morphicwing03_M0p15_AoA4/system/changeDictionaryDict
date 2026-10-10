@@ -1,0 +1,232 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	dictionary;
+	location	"system";
+	object	changeDictionaryDict;
+}
+p
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	zeroGradient;
+		}
+		outlet
+		{
+			type	fixedValue;
+			value	uniform 100000;
+		}
+		right
+		{
+			type	empty;
+		}
+		bottom
+		{
+			type	freestreamPressure;
+			freestreamValue	uniform 0;
+		}
+		top
+		{
+			type	freestreamPressure;
+			freestreamValue	uniform 0;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	zeroGradient;
+		}
+	}
+}
+U
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	fixedValue;
+			value	uniform (323.09 11.28 0);
+		}
+		outlet
+		{
+			type	pressureInletOutletVelocity;
+		}
+		right
+		{
+			type	empty;
+		}
+		bottom
+		{
+			type	freestreamVelocity;
+			freestreamValue	uniform (0 0 0);
+		}
+		top
+		{
+			type	freestreamVelocity;
+			freestreamValue	uniform (0 0 0);
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	noSlip;
+		}
+	}
+}
+T
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	totalTemperature;
+			T0	uniform 300;
+			gamma	1.396;
+		}
+		outlet
+		{
+			type	inletOutlet;
+			inletValue	uniform 300;
+		}
+		right
+		{
+			type	empty;
+		}
+		bottom
+		{
+			type	inletOutlet;
+			inletValue	uniform 300;
+		}
+		top
+		{
+			type	inletOutlet;
+			inletValue	uniform 300;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	zeroGradient;
+		}
+	}
+}
+k
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	turbulentIntensityKineticEnergyInlet;
+			intensity	0.05;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		right
+		{
+			type	empty;
+		}
+		bottom
+		{
+			type	turbulentIntensityKineticEnergyInlet;
+			intensity	0.05;
+		}
+		top
+		{
+			type	turbulentIntensityKineticEnergyInlet;
+			intensity	0.05;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	kqRWallFunction;
+		}
+	}
+}
+omega
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	turbulentMixingLengthFrequencyInlet;
+			mixingLength	0.1;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		right
+		{
+			type	empty;
+		}
+		bottom
+		{
+			type	turbulentMixingLengthFrequencyInlet;
+			mixingLength	0.001;
+		}
+		top
+		{
+			type	turbulentMixingLengthFrequencyInlet;
+			mixingLength	0.001;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	omegaWallFunction;
+		}
+	}
+}
+nut
+{
+	boundaryField
+	{
+		right
+		{
+			type	empty;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	nutUWallFunction;
+		}
+	}
+}
+alphat
+{
+	boundaryField
+	{
+		right
+		{
+			type	empty;
+		}
+		left
+		{
+			type	empty;
+		}
+		wing_default
+		{
+			type	compressible::alphatJayatillekeWallFunction;
+			Prt	0.85;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "file-series-version" : "1.0",
+  "files" : [
+    { "name" : "new_0.vtm", "time" : 0 },
+    { "name" : "new_14399.vtm", "time" : 0.00400013 },
+    { "name" : "new_17982.vtm", "time" : 0.00499987 },
+    { "name" : "new_21566.vtm", "time" : 0.00600012 }
+  ]
+}

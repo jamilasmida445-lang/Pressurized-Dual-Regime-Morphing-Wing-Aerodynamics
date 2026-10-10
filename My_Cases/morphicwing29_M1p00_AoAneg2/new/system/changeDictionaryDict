@@ -1,0 +1,128 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	dictionary;
+	location	"system";
+	object	changeDictionaryDict;
+}
+p
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	totalPressure;
+			p0	uniform 100000;
+			gamma	1.396;
+		}
+                airfoil
+                {
+                type            zeroGradient;
+                }
+		outlet
+		{
+			type	fixedValue;
+			value	uniform 100000;
+		}
+		bottom
+		{
+			type	totalPressure;
+			p0	uniform 100000;
+			gamma	1.396;
+		}
+		top
+		{
+			type	totalPressure;
+			p0	uniform 100000;
+			gamma	1.396;
+		}
+		left
+		{
+			type	empty;
+		}
+		right
+		{
+			type	empty;
+		}
+	}
+}
+U
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	pressureInletOutletVelocity;
+			rho	rho;
+		}
+		outlet
+		{
+			type	pressureInletOutletVelocity;
+			rho	rho;
+		}
+		bottom
+		{
+			type	pressureInletOutletVelocity;
+			rho	rho;
+		}
+		top
+		{
+			type	pressureInletOutletVelocity;
+			rho	rho;
+		}
+		left
+		{
+			type	empty;
+		}
+		right
+		{
+			type	empty;
+		}
+                airfoil
+                {
+                type            noSlip;
+                }
+	}
+}
+T
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	totalTemperature;
+			T0	uniform 300;
+			gamma	1.396;
+		}
+		outlet
+		{
+			type	inletOutlet;
+			inletValue	uniform 300;
+		}
+		bottom
+		{
+			type	totalTemperature;
+			T0	uniform 300;
+			gamma	1.396;
+		}
+		top
+		{
+			type	totalTemperature;
+			T0	uniform 300;
+			gamma	1.396;
+		}
+		left
+		{
+			type	empty;
+		}
+		right
+		{
+			type	empty;
+		}
+                airfoil
+                {
+                type            zeroGradient;
+                }
+	}
+}

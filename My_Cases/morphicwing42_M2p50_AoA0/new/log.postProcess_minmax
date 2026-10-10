@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : postProcess -func fieldMinMax
+Date   : Aug 28 2026
+Time   : 23:28:05
+Host   : DESKTOP-OPC5974
+PID    : 18256
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/case14/new
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Time = 0
+
+Reading fields:
+    volScalarField: T p rho
+    volVectorField: U
+
+Executing functionObjects
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 61934 at location (0.8171631 0.4325272 -0.055)
+    max(mag(U)) = 850.73 in cell 0 at location (-4.95 -9.95 -0.06)
+    min(rho) = 1.225 in cell 0 at location (-4.95 -9.95 -0.06)
+    max(rho) = 1.225 in cell 0 at location (-4.95 -9.95 -0.06)
+    min(p) = 101325 in cell 0 at location (-4.95 -9.95 -0.06)
+    max(p) = 101325 in cell 0 at location (-4.95 -9.95 -0.06)
+    min(T) = 288.15 in cell 0 at location (-4.95 -9.95 -0.06)
+    max(T) = 288.15 in cell 0 at location (-4.95 -9.95 -0.06)
+
+
+Time = 0.00200001
+
+Reading fields:
+    volScalarField: T p rho
+    volVectorField: U
+
+Executing functionObjects
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 61934 at location (0.8171631 0.4325272 -0.055)
+    max(mag(U)) = 924.6359 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    min(rho) = 0.5115785 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(rho) = 2.546735 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(p) = 34856.3 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(p) = 278324 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(T) = 237.6096 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    max(T) = 381.1802 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+
+
+Time = 0.00400001
+
+Reading fields:
+    volScalarField: T p rho
+    volVectorField: U
+
+Executing functionObjects
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 61934 at location (0.8171631 0.4325272 -0.055)
+    max(mag(U)) = 921.8104 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    min(rho) = 0.5245236 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(rho) = 2.546735 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(p) = 35991.27 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(p) = 278324 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(T) = 238.4666 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    max(T) = 381.1802 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+
+
+Time = 0.00600001
+
+Reading fields:
+    volScalarField: T p rho
+    volVectorField: U
+
+Executing functionObjects
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 61934 at location (0.8171631 0.4325272 -0.055)
+    max(mag(U)) = 921.8132 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    min(rho) = 0.5245133 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(rho) = 2.546735 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(p) = 35990.58 in cell 60023 at location (0.9987153 0.4008762 -0.06)
+    max(p) = 278324 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+    min(T) = 238.4646 in cell 60492 at location (0.9383021 0.3881505 -0.06)
+    max(T) = 381.1802 in cell 62020 at location (0.003793691 0.4009496 -0.06)
+
+
+End
+

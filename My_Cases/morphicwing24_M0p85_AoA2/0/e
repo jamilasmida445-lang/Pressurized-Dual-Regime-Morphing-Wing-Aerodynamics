@@ -1,0 +1,42 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      e;
+}
+dimensions      [0 2 -2 0 0 0 0];
+internalField   uniform 206891.70;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 206891.70;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    "(left|right|front|back|frontAndBack)"
+    {
+        type            empty;
+    }
+    bottom
+    {
+        type            inletOutlet;
+        inletValue      uniform 206891.70;
+        value           uniform 206891.70;
+    }
+    top
+    {
+        type            fixedValue;
+        value           uniform 206891.70;
+    }
+    wing_default
+    {
+        type            zeroGradient;
+    }
+}

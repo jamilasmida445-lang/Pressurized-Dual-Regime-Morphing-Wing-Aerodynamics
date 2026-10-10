@@ -1,0 +1,77 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2212                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 70dc4e522-20230214 OPENFOAM=2212 version=v2212
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Program Files\SimFlow\OpenFOAM-2212\bin\rhoCentralFoam
+Date   : Aug 17 2026
+Time   : 21:38:02
+Host   : DESKTOP-OPC5974
+PID    : 15876
+I/O    : uncollated
+Case   : C:/Users/Copy Center/SimFlow-Workspaces/Workspace-fjta35/My_Cases/new/new
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding OptimisationSwitches according to controlDict
+    fileHandler (unregistered)
+    fileModificationSkew 0;
+
+    maxMasterFileBufferSize 1e+09;
+
+    maxThreadFileBufferSize 1e+09;
+
+    mpiBufferSize (unregistered)
+Create mesh for time = 0
+
+Selecting dynamicFvMesh staticFvMesh
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+fluxScheme: Kurganov
+
+Starting time loop
+
+Mean and max Courant Numbers = 3468.755 694922.3
+Time = 1
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+DICPCG:  Solving for Ux, Initial residual = 0.2677762, Final residual = 1.974361e-05, No Iterations 7
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+DICPCG:  Solving for h, Initial residual = 0.002799039, Final residual = 2.830592e-07, No Iterations 7
+
+
+--> FOAM FATAL ERROR: (openfoam-2212)
+Negative initial temperature T0: -1.797188e+10
+
+    From Foam::scalar Foam::species::thermo<Thermo, Type>::T(Foam::scalar, Foam::scalar, Foam::scalar, Foam::scalar (Foam::species::thermo<Thermo, Type>::*)(Foam::scalar, Foam::scalar) const, Foam::scalar (Foam::species::thermo<Thermo, Type>::*)(Foam::scalar, Foam::scalar) const, Foam::scalar (Foam::species::thermo<Thermo, Type>::*)(Foam::scalar) const) const [with Thermo = Foam::hConstThermo<Foam::perfectGas<Foam::specie> >; Type = Foam::sensibleEnthalpy; Foam::scalar = double; Foam::species::thermo<Thermo, Type> = Foam::species::thermo<Foam::hConstThermo<Foam::perfectGas<Foam::specie> >, Foam::sensibleEnthalpy>]
+    in file /opt/OpenFOAM/OpenFOAM-dev/src/thermophysicalModels/specie/lnInclude/thermoI.H at line 57.
+
+FOAM aborting
+

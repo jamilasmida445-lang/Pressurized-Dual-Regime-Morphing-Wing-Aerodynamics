@@ -1,0 +1,41 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                                                                   |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2212                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createPatchDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Synchronize points across processors if running in parallel
+pointSync false;
+
+// Patches to construct
+patches
+(
+    {
+        // Name of your consolidated patch
+        name airfoil;
+
+        // Type of the new patch
+        patchInfo
+        {
+            type wall;
+        }
+
+        // Construct by merging existing patches
+        constructFrom patches;
+
+        // Regex matching all 200+ fragmented wall patches
+        patches ("biconvex_core_Extrude_face_.*");
+    }
+);
+
+// ************************************************************************* //

@@ -1,0 +1,583 @@
+meshing
+{
+	parallel	false;
+	processors	4;
+	meshingStages
+	{
+		Base	true;
+		Mesh	true;
+		Layers	true;
+	}
+}
+Graphics3D
+{
+	MeshParameters
+	{
+		default
+		{
+			inlet
+			{
+				color	(180 71 36);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+			outlet
+			{
+				color	(255 235 51);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+			bottom
+			{
+				color	(92 255 51);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+			top
+			{
+				color	(51 255 194);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+			left
+			{
+				color	(51 133 255);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+			right
+			{
+				color	(153 51 255);
+				transparency	0.0;
+				Model
+				{
+					isVisible	true;
+					representation	SurfaceWithEdges;
+				}
+				Slice
+				{
+					isVisible	false;
+					representation	Edges;
+				}
+			}
+		}
+	}
+	CellZonesParameters
+	{
+	}
+	ProbeParameters
+	{
+	}
+	View
+	{
+		SavedViews
+		{
+		}
+	}
+	GeometryParameters
+	{
+		Model
+		{
+			hide	false;
+		}
+		Slice
+		{
+			hide	false;
+		}
+		biconvex_core_Extrude
+		{
+			color	(184 190 194);
+			transparency	0.0;
+			Model
+			{
+				hide	true;
+			}
+			Slice
+			{
+				hide	true;
+			}
+		}
+	}
+	postprocessingPlots
+	{
+		residuals
+		{
+			properties
+			{
+				title	;
+				isXGridVisible	true;
+				isYGridVisible	true;
+				xLabel	Time [s];
+				yLabel	Residuum [-];
+			}
+			series
+			{
+				Ux
+				{
+					label	Ux;
+					color	(0 0 255);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				Uy
+				{
+					label	Uy;
+					color	(255 0 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				Uz
+				{
+					label	Uz;
+					color	(0 255 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				p
+				{
+					label	p;
+					color	(0 0 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				p_rgh
+				{
+					label	p_rgh;
+					color	(0 0 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				omega
+				{
+					label	omega;
+					color	(255 200 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				epsilon
+				{
+					label	epsilon;
+					color	(255 200 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				k
+				{
+					label	k;
+					color	(0 255 255);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+				h
+				{
+					label	h;
+					color	(84 255 0);
+					isVisible	true;
+					thickness	1;
+					representation	Solid;
+				}
+			}
+		}
+	}
+	SectionViewParameters
+	{
+		point	(0 0 0);
+		normal	(0 0 1);
+		type	FullCell;
+		isEnabled	false;
+	}
+	PostprocessingParameters
+	{
+		ActiveTime	0;
+		ActiveField	Solid;
+		LockedRanges	{};
+	}
+	SlicesParameters
+	{
+	}
+}
+slices
+{
+}
+summary
+{
+}
+inputs
+{
+	default
+	{
+		radiationProperties
+		{
+			solarLoarCoeffs
+			{
+				sunDirection	(0 0 -1);
+			}
+			solarLoadCoeffs
+			{
+				sunDirection	(0 0 -1);
+			}
+		}
+	}
+}
+primitiveMesh
+{
+	type	box;
+	box
+	{
+		min	(-5 -10 -0.05);
+		max	(15 20 0.05);
+		division	(200 300 1);
+		grading	(1 1 1);
+		lockCellSize	false;
+		boundaries
+		{
+			y_plus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			z_minus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			x_minus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			x_plus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			y_minus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			z_plus
+			{
+				name	boundaries;
+				type	patch;
+			}
+		}
+	}
+	cylinder
+	{
+		axis	X;
+		origin	0;
+		radius	1;
+		length	1;
+		radialFraction	0.5;
+		radialDivision	10;
+		radialGrading	1;
+		axialDivision	10;
+		axialGrading	1;
+		circumferentialDivision	10;
+		boundaries
+		{
+			inlet
+			{
+				name	boundaries;
+				type	patch;
+			}
+			cylinder
+			{
+				name	boundaries;
+				type	patch;
+			}
+			outlet
+			{
+				name	boundaries;
+				type	patch;
+			}
+		}
+	}
+	plate
+	{
+		minx	-0.5;
+		miny	-0.5;
+		maxx	0.5;
+		maxy	0.5;
+		divisionx	10;
+		divisiony	10;
+		gradingx	1;
+		gradingy	1;
+		lockCellSize	false;
+		boundaries
+		{
+			y_minus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			x_minus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			y_plus
+			{
+				name	boundaries;
+				type	patch;
+			}
+			x_plus
+			{
+				name	boundaries;
+				type	patch;
+			}
+		}
+	}
+	wedge
+	{
+		lockCellSize	false;
+		origin	0;
+		radius	1;
+		length	1;
+		radialDivision	10;
+		radialGrading	1;
+		axialDivision	10;
+		axialGrading	1;
+		boundaries
+		{
+			outlet
+			{
+				name	boundaries;
+				type	patch;
+			}
+			inlet
+			{
+				name	boundaries;
+				type	patch;
+			}
+			cylinder
+			{
+				name	boundaries;
+				type	patch;
+			}
+		}
+	}
+}
+probes
+{
+}
+fieldInputs
+{
+	default
+	{
+		p
+		{
+			internalField	uniform 100000;
+			boundaryField
+			{
+				inlet
+				{
+					type	totalPressure;
+					p0	"uniform 100000";
+					gamma	1.396;
+				}
+				outlet
+				{
+					type	fixedValue;
+					value	"uniform 100000";
+				}
+				bottom
+				{
+					type	totalPressure;
+					p0	"uniform 100000";
+					gamma	1.396;
+				}
+				top
+				{
+					type	totalPressure;
+					p0	"uniform 100000";
+					gamma	1.396;
+				}
+				left
+				{
+					type	empty;
+				}
+				right
+				{
+					type	empty;
+				}
+			}
+		}
+		U
+		{
+			internalField	uniform (0 0 0);
+			boundaryField
+			{
+				inlet
+				{
+					type	pressureInletOutletVelocity;
+					rho	rho;
+				}
+				outlet
+				{
+					type	pressureInletOutletVelocity;
+					rho	rho;
+				}
+				bottom
+				{
+					type	pressureInletOutletVelocity;
+					rho	rho;
+				}
+				top
+				{
+					type	pressureInletOutletVelocity;
+					rho	rho;
+				}
+				left
+				{
+					type	empty;
+				}
+				right
+				{
+					type	empty;
+				}
+			}
+		}
+		T
+		{
+			internalField	uniform 300;
+			boundaryField
+			{
+				inlet
+				{
+					type	totalTemperature;
+					T0	"uniform 300";
+					gamma	1.396;
+				}
+				outlet
+				{
+					type	inletOutlet;
+					inletValue	"uniform 300";
+				}
+				bottom
+				{
+					type	totalTemperature;
+					T0	"uniform 300";
+					gamma	1.396;
+				}
+				top
+				{
+					type	totalTemperature;
+					T0	"uniform 300";
+					gamma	1.396;
+				}
+				left
+				{
+					type	empty;
+				}
+				right
+				{
+					type	empty;
+				}
+			}
+		}
+	}
+}
+geometry
+{
+	biconvex_core_Extrude
+	{
+		tessellation	Normal;
+	}
+}
+regionInit
+{
+	patchInitializationMode	onInitialization;
+}
+application
+{
+}
+run
+{
+	parallel	false;
+	processors	3;
+}
+mesh
+{
+}
+parameters
+{
+}
+initialization
+{
+	potentialInit	false;
+	nNonOrthogonalCorrectors	8;
+	mapInit	false;
+	mapConsistent	false;
+}
+materials
+{
+	regions
+	{
+		default	air-gas;
+	}
+}
+regionProperties
+{
+	default
+	{
+		bafflesSplit	false;
+		cellZones
+		{
+		}
+	}
+}

@@ -1,0 +1,18 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	dictionary;
+	location	"system";
+	object	extrudeMeshDict;
+}
+constructFrom	mesh;
+sourceCase	".";
+sourcePatches	(left);
+extrudeModel	linearNormal;
+thickness	0.01;
+nLayers	1;
+expansionRatio	1;
+flipNormals	false;
+mergeTol	0;
+mergeFaces	false;

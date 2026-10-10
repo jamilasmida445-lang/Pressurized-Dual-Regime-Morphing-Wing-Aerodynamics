@@ -1,0 +1,47 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	volScalarField;
+	location	"0";
+	object	nut;
+	arch	"LSB;label=32;scalar=64";
+}
+dimensions	[0 2 -1 0 0 0 0];
+internalField	uniform 0.10000000149011612;
+boundaryField
+{
+	inlet
+	{
+		type	calculated;
+		value	uniform 0.10000000149011612;
+	}
+	outlet
+	{
+		type	calculated;
+		value	uniform 0.10000000149011612;
+	}
+	right
+	{
+		type	empty;
+	}
+	bottom
+	{
+		type	calculated;
+		value	uniform 0.10000000149011612;
+	}
+	top
+	{
+		type	calculated;
+		value	uniform 0.10000000149011612;
+	}
+	left
+	{
+		type	empty;
+	}
+	wing_default
+	{
+		type	nutUWallFunction;
+		value	uniform 0.10000000149011612;
+	}
+}
